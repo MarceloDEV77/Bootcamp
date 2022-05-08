@@ -1,0 +1,169 @@
+*{
+    padding: 0;
+    border: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+}  
+
+body{
+    background-color: rgb(243, 243, 243);
+}
+.container{
+    left: -50px;
+    top: 70px;
+    position: relative;
+    z-index: 0;
+ 
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    
+    
+} 
+.esquerda{
+    
+   
+    width: 240px;
+    height:555px;
+    margin: 20px;
+     z-index: 0;
+    padding-right: 20px;
+   
+   
+}
+
+.frame{
+   z-index: 1;
+   position: absolute;
+   width: 280px;
+   height: 571px;
+}
+.slider{
+   top: 15px;
+
+   left: 16px;
+   z-index: 1;
+   position: relative;
+   width: 250px;
+   height: 541px;
+}
+.back{
+    top: -8px;
+    left: 190px;
+   z-index:0;
+   position: relative;
+   width: 280px;
+   height: 571px;
+}
+
+.direita{
+    
+    background-color: rgb(255, 255, 255);
+    height: 380px;
+    width: 400px;
+    margin: 10px;
+    border: solid 0.5px rgb(201, 201, 201);
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo{
+    width: 200px;
+    height: auto;
+    top: 35px;
+    position: relative;
+}
+
+.userFoto{
+    position: relative;
+top:50px;
+height: auto;
+width: 130px;
+border-radius: 50%;
+}
+.btn{
+    top: 80px;
+    height: 30px;
+    width: 250px;
+    color: black;
+    border-radius: 3px;
+    background-color: rgb(61, 194, 255);
+    position: relative;
+    color: aliceblue;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 14px;
+}
+.btn:hover{
+    background-color: rgb(0, 174, 255);
+}
+.remover{
+    top: 100px;
+    position: relative;
+    font-weight: 700;
+    color: rgb(0, 174, 255);
+    font-size: 14px;
+}
+.logout{
+    position: relative;
+    top: 160px;
+    display: flex;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    flex-direction:column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    border: solid 0.5px rgb(201, 201, 201);
+    height: 100px;
+    width: 400px;
+    background-color: rgb(255, 255, 255);
+}
+.app{
+    display: flex;
+    flex-direction:column;
+    position: relative;
+    top: 180px;
+    justify-content: center;
+    text-align: center;
+}
+.singUp{
+margin-top: 5px;
+}
+
+.singUp{
+    color:rgb(0, 174, 255);
+    font-weight: 600;
+}
+.or{
+    color: rgb(102, 102, 102);
+}
+.play{
+   height: 40px;
+   margin-left: 10px;
+
+}
+.lojaApp{
+    position: relative;
+    top: 10px;
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+@media only screen and (max-width: 1000px) {
+    .esquerda{
+     display: none;
+    }
+    .back{
+        display: none; 
+    }
+
+    .frame{
+        display: none;
+    }
+}
